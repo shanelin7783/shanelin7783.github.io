@@ -1,9 +1,0 @@
-{
-    "parser": "babylon",
-    "printWidth": 150,
-    "semi": true,
-    "trailingComma": "all",
-    "arrowParens": "always",
-    "bracketSpacing": true,
-    "tabWidth": 4,
-}
