@@ -1,0 +1,197 @@
+html,body, #__next {
+    height: 100%;
+}
+
+.animation_frame {
+    position: absolute;
+    z-index: 99;
+    top: 49px;
+}
+
+.window_con .window_box > div {
+    display: block;
+}
+
+.bot_menu_popup {
+    display: none;
+    position: absolute;
+}
+
+.bot_menu_popup.active {
+    display: block;
+}
+
+.bot_menu_popup .bot_menu_input:after {
+    position: absolute;
+    bottom: -2vw;
+}
+
+.inside_header {
+    position: relative;
+}
+
+.chart .chart_list.expect dt {
+    font-size: calc(100vw * 0.023);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.chart .chart_list dd {
+    position: relative;
+}
+
+.chart_list {
+    position: relative;
+}
+
+.chart .chart_list dd span.brown {
+    position: absolute;
+    height: 15px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    line-height: 16px;
+    z-index: 2;
+}
+
+header .bgimg {
+    pointer-events: none;
+}
+
+header nav .ff28_smenucon {
+    z-index: 69696;
+}
+
+header .ff28_number {
+    z-index: 10000;
+    position: relative;
+}
+
+#loadOverlay {
+    display: none !important;
+}
+@keyframes expandWidth {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+.meter {
+    width: 100px;
+    border-radius: 25px;
+    padding: 2px;
+    height: 8px;
+    display: inline-block;
+    background: rgba(113, 113, 113, 0.23);
+}
+.meter span {
+    display: block;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #d59e63;
+    position: relative;
+    overflow: hidden;
+    animation-name: expandWidth;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+}
+.mix_con h5 {
+    top: 0.2vw;
+}
+
+header .ff28_number .ff28_numbercon ol li:not(:last-child) {
+    background: rgba(15, 10, 9, 0.3);
+    padding: 2px 0 0 2px;
+    box-shadow: 0px 1px 1px 0 rgba(200, 154, 128, 0.2), inset 0px 2px 6px 0 #352117;
+}
+
+header .ff28_number .ff28_numbercon ol li:nth-child(3) {
+    font-size: 7vw;
+    margin: 0 1.5% 0;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+header .ff28_number .ff28_numbercon ol li:last-child {
+    font-size: 3.8vw;
+    font-weight: normal;
+    margin: 0 -5px 0 -1vw;
+    box-shadow: none;
+}
+
+header nav .volume img:last-child {
+    display: unset;
+}
+
+header .ff28_number .ff28_numbertxt::before {
+    content: '';
+    width: 19px;
+    height: 19px;
+    margin-right: 3px;
+    position: relative;
+    z-index: 1;
+    background: url(../images/header_disc.png);
+    background-size: 100%;
+}
+
+article .play_number {
+    margin-bottom: unset;
+}
+
+header {
+    position: relative !important;
+}
+
+footer {
+    position: relative !important;
+}
+
+header:before, .inside_header:before {
+    position: absolute;
+    top: -9vw;
+}
+
+.lottery_rules, .ffc_my_bets, .chart {
+    padding-top: unset;
+    flex: 1;
+    overflow: auto;
+    position: relative;
+}
+
+.ffc_my_bets, .chart {
+    margin: 2vw auto;
+}
+
+.detail_container {
+    background: url(../images/bg.png) top center repeat;
+    background-size: 97%;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 22vw);
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+
+.detail_container.active {
+    transform: translateX(0);
+}
+
+.detail {
+    width: 100%;
+    flex: 1;
+    overflow: auto;
+    position: relative;
+    margin-top: 1vw;
+}
+
+.window_con .window_box > div p {
+    word-break: break-word;
+}

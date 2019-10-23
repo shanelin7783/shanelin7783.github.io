@@ -1,0 +1,521 @@
+.dialog_cover_container {
+    visibility: hidden;
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.dialog_cover_container.show {
+    visibility: visible;
+}
+
+.dialog_cover_content {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.dialog_container {
+    background-color: rgb(246, 246, 246);
+    min-width: 271px;
+    height: auto;
+    border-radius: 14px;
+}
+
+.dialog_content {
+    height: 100%;
+}
+
+.dialog_message {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 18px 0px;
+}
+
+.dialog_submit_content {
+    display: flex;
+    border-top: 1px solid rgb(230, 230, 230);
+}
+
+.dialog_submit {
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    color: rgb(0, 122, 255);
+    flex: 1 1 0%;
+}
+
+.ffc_nownum .nownum_con .ffc_nowtxt .ffc_numcon div.num_moveBox {
+    margin: 0px;
+    height: auto;
+    border: none;
+    background-image: none;
+}
+
+.num_moveBox {
+    animation-name: slotRunning;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes slotRunning {
+    from {
+        transform: translateY(-91%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.ffc_my_bets {
+    top: 44px;
+    bottom: 0;
+    overflow: auto;
+}
+
+.ffc_acc.active {
+    width: 100%;
+    height: 100%;
+}
+
+.ffc_acc .acc_profile {
+    transition: unset;
+}
+
+/* .ffc_acc.active .acc_profile {
+    transform: translateX(0);
+    transition: all 0.4s ease 0s;
+} */
+
+.ffc_acc.active .acc_black {
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease 0s;
+}
+
+.ffc_acc.active + .ffc_main {
+    z-index: 1;
+    /* transform: translateX(-240px); */
+    transition: unset;
+    /* max-height: calc(100vh - 44px); */
+    /* overflow: hidden; */
+}
+
+nav {
+    visibility: hidden;
+    z-index: 99;
+}
+nav.active {
+    visibility: visible;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+aside {
+    width: 100%;
+    left: 0;
+    z-index: 10;
+    transform: unset;
+    transition: unset;
+}
+
+.ffc_menu ul {
+    flex-wrap: wrap;
+}
+
+.ffc_menu ul li {
+    flex: 0 1 25%;
+    margin: unset;
+    border: unset;
+}
+
+.ffc_menu.third ul li {
+    flex: 0 1 33.33%;
+    margin: unset;
+    border: unset;
+}
+
+.ffc_menu ul li .item {
+    line-height: 30px;
+    text-align: center;
+    flex: 1 1 0%;
+    border-radius: 3px;
+    margin: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ffc_menu ul li.active {
+    border: unset;
+    background: unset;
+}
+
+.ffc_menu ul li.active .item {
+    color: #d10404;
+    border: 1px solid #d10404;
+    background: #fff;
+}
+
+.ffc_menu ul li.none .item {
+    background: none;
+    border: none;
+}
+
+.ffc_main {
+    z-index: 1;
+    position: relative;
+    /* transition: all 0.5s ease 0s; */
+    overflow-x: hidden;
+    transform: unset;
+}
+
+.ffc_container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 44px);
+    padding-top: 44px;
+}
+
+.ffc_container.showSlip .ffc_nownum,
+.ffc_container.showSlip .lhc_nownum {
+    transform: translateX(-100%);
+}
+
+.ffc_container.showSlip .play_ffcnumber {
+    transform: translateX(-100%);
+}
+
+.ffc_betlist {
+    height: calc(100vh - 92px);
+    transform: translateX(101%);
+    transition: transform 0.5s ease 0s;
+    top: 44px;
+    overflow: auto;
+}
+
+.ffc_nownum,
+.lhc_nownum {
+    flex: unset;
+    transition: all 0.5s ease 0s;
+}
+
+.lhc_nownum.active .lhc_history,
+.ffc_nownum.active .ffc_history {
+    max-height: calc((100vh - 132px) - 85px);
+}
+
+.ffc_history,
+.lhc_history {
+    max-height: 0;
+    overflow: auto;
+    transition: max-height 0.5s ease;
+}
+
+.ffc_content {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    margin-bottom: 49px;
+}
+
+.ffc_number,
+.lhc_number {
+    padding-bottom: unset;
+}
+
+.ffc_nownum .nownum_con .ffc_nowtxt .ffc_numcon .numall {
+    font-weight: 600;
+    box-shadow: inset 0px 1px 0 0 rgba(255, 236, 236, 0.3);
+    border: 1px solid #b00000;
+    background-image: linear-gradient(to top, #970000, #ef0000);
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+    border-radius: 13px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin: auto 2px;
+    overflow: hidden;
+    position: relative;
+}
+
+.number_con dl dd .number_tit span:active {
+    background: #d10404;
+    height: 26px;
+}
+
+button:active {
+    transform: translateY(4px);
+    transition: transform 0.1s;
+    box-shadow: unset;
+}
+
+aside button:disabled {
+    transform: translateY(4px);
+    background-image: linear-gradient(to top, #848484, #dadada) !important;
+    box-shadow: unset;
+}
+
+.ffc_window {
+    background: rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.ffc_window.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.number_con .lhcnumber_con .lhcnumber_content {
+    display: flex;
+    flex: 0 0 25%;
+}
+.number_con .lhcnumber_con .lhcnumber_content.three {
+    flex: 0 0 33.33%;
+}
+.number_con .lhcnumber_con .lhcnumber_content.five {
+    flex: 0 0 20%;
+}
+
+.lhc_nownum .nownum_con .ffc_nowtxt .lhc_numcon div {
+    display: block;
+}
+
+.lhc_nownum .nownum_con .ffc_nowtxt .lhc_numcon .lhc_rednum,
+.lhc_nownum .nownum_con .ffc_nowtxt .lhc_numcon .lhc_greennum,
+.lhc_nownum .nownum_con .ffc_nowtxt .lhc_numcon .lhc_bluenum {
+    position: relative;
+    overflow: hidden;
+}
+
+.lhc_nownum .nownum_con .ffc_nowtxt .lhc_numcon div span {
+    height: 20px;
+}
+
+.lhc_nownum .nownum_con .ffc_nowtxt .lhc_numcon.downIn .lhc_num p,
+.ffc_nownum .nownum_con .ffc_nowtxt .ffc_numcon.downIn .numall p {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-100%);
+    animation-name: topToBottom;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes topToBottom {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.lhc_numcon.downIn div:nth-child(2) .lhc_num p,
+.ffc_numcon.downIn .numall:nth-child(2) p {
+    animation-delay: 0.5s;
+}
+.lhc_numcon.downIn div:nth-child(3) .lhc_num p,
+.ffc_numcon.downIn .numall:nth-child(3) p {
+    animation-delay: 1s;
+}
+.lhc_numcon.downIn div:nth-child(4) .lhc_num p,
+.ffc_numcon.downIn .numall:nth-child(4) p {
+    animation-delay: 1.5s;
+}
+.lhc_numcon.downIn div:nth-child(5) .lhc_num p,
+.ffc_numcon.downIn .numall:nth-child(5) p {
+    animation-delay: 2s;
+}
+.lhc_numcon.downIn div:nth-child(6) .lhc_num p {
+    animation-delay: 2.5s;
+}
+.lhc_numcon.downIn div:nth-child(8) .lhc_num p {
+    animation-delay: 3s;
+}
+
+.ffc_acc .acc_profile .game_menu .tit span {
+    background: url(/static/mobile/images/mobile_3x/chevron_down.png) 100% auto no-repeat center center;
+}
+
+.ffc_acc .acc_profile .game_menu .tit span.open {
+    background: url(/static/mobile/images/mobile_3x/chevron_up.png) 100% auto no-repeat center center;
+}
+
+.game {
+    overflow-y: hidden;
+    max-height: 0;
+    transition: max-height 1s ease;
+}
+
+.game.active {
+    max-height: 2000px;
+}
+
+.ffc_acc .acc_profile .game_menu a img,
+.ffc_acc .acc_profile .game_menu a object {
+    align-items: center;
+    width: 40px;
+    margin-right: 10px;
+    margin-left: 2px;
+}
+
+.lottery_rules {
+    padding: 0px 10px;
+    position: fixed;
+    top: 44px;
+    left: 0px;
+    height: calc(100vh - 44px);
+    overflow-y: auto;
+}
+
+.howtoplay dd:last-child {
+    margin-bottom: 20px;
+}
+
+.ffc_betlist .ffc_betbtn div.disabled {
+    background: #fff;
+    border-color: #fff;
+    color: #b5b5b5;
+}
+
+.dank-ass-loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dank-ass-loader .row {
+    display: flex;
+}
+.arrow {
+    width: 0;
+    height: 0;
+    margin: 0 -3px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10.8px solid #d10404;
+    animation: blink 1s infinite;
+    filter: drop-shadow(0 0 9px #d10404);
+}
+.arrow.down {
+    transform: rotate(180deg);
+}
+.arrow.outer-1 {
+    animation-delay: -0.05556s;
+}
+.arrow.outer-2 {
+    animation-delay: -0.11111s;
+}
+.arrow.outer-3 {
+    animation-delay: -0.16667s;
+}
+.arrow.outer-4 {
+    animation-delay: -0.22222s;
+}
+.arrow.outer-5 {
+    animation-delay: -0.27778s;
+}
+.arrow.outer-6 {
+    animation-delay: -0.33333s;
+}
+.arrow.outer-7 {
+    animation-delay: -0.38889s;
+}
+.arrow.outer-8 {
+    animation-delay: -0.44444s;
+}
+.arrow.outer-9 {
+    animation-delay: -0.5s;
+}
+.arrow.outer-10 {
+    animation-delay: -0.55556s;
+}
+.arrow.outer-11 {
+    animation-delay: -0.61111s;
+}
+.arrow.outer-12 {
+    animation-delay: -0.66667s;
+}
+.arrow.outer-13 {
+    animation-delay: -0.72222s;
+}
+.arrow.outer-14 {
+    animation-delay: -0.77778s;
+}
+.arrow.outer-15 {
+    animation-delay: -0.83333s;
+}
+.arrow.outer-16 {
+    animation-delay: -0.88889s;
+}
+.arrow.outer-17 {
+    animation-delay: -0.94444s;
+}
+.arrow.outer-18 {
+    animation-delay: -1s;
+}
+.arrow.inner-1 {
+    animation-delay: -0.16667s;
+}
+.arrow.inner-2 {
+    animation-delay: -0.33333s;
+}
+.arrow.inner-3 {
+    animation-delay: -0.5s;
+}
+.arrow.inner-4 {
+    animation-delay: -0.66667s;
+}
+.arrow.inner-5 {
+    animation-delay: -0.83333s;
+}
+.arrow.inner-6 {
+    animation-delay: -1s;
+}
+@keyframes blink {
+    0% {
+        opacity: 0.1;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+#loadOverlay {
+    display: none !important;
+}
+
+.game_menu .game .gameUl {
+    overflow-y: hidden;
+    max-height: 0;
+    transition: max-height 1s ease;
+}
+
+.game_menu .game .gameUl.active {
+    max-height: 2000px;
+}
