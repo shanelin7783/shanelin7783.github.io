@@ -1,0 +1,60 @@
+.chart .chart_list dd { 
+    position: relative; 
+    min-width: 0px;
+}
+.chart .chart_tit dd {
+    min-width: 0px;
+}
+
+.chart_list {
+    position: relative;
+}
+
+.chart .chart_list dd span.red { 
+    position: absolute;
+    height: 15px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    line-height: 16px;
+    z-index: 2;
+}
+
+.ffc_menu ul li a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ffc_menu ul li .item {
+    padding: 0px 4px;
+}
+
+.ffc_menu.third ul li {
+    min-width: 0;
+}
+
+/* .ffc_menu {
+    max-height: 310px;
+    overflow: scroll;
+} */
+
+.chart .chart_list.expect dt {
+    font-size: 2.5vw;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.chart.eleven .chart_list.expect  dt {
+    font-size: calc(100vw * 0.023);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.chart .lhcchart_total dd.lhc_fontblue {
+    color: #245da9;
+}
+
+.chart .lhcchart_total dd.lhc_fontred {
+    color: #d10404;
+}

@@ -1,0 +1,148 @@
+html,body, #__next {
+    height: 100%;
+}
+
+.smenu-active {
+    display: block;
+    opacity: 1;
+    transform: translateY(10vw);
+    transition: opacity 0.5s , transform 0.5s ;
+}
+
+.detail_container {
+    background: url(../images/bg.jpg) repeat-y top center / 100%;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 18vw);
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+    /* right: 0; */
+    width: 100%;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+
+.detail_container.active {
+    transform: translateX(0);
+}
+
+.detail {
+    flex: 1;
+    overflow: auto;
+    position: relative;
+    margin-top: 16vw;
+    padding-top: 0;
+}
+
+.detail:before {
+    margin-top: unset;
+    background-size: 97% auto;
+}
+
+.detail:after {
+    background-size: 97% auto;
+    position: fixed;
+    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
+}
+
+.lhc_my_bets dd > div:nth-child(2) div:last-child {
+    position: relative;
+}
+
+.lhc_my_bets div {
+    flex: 1 1 25%;
+}
+
+.lhc_my_bets dd > div:nth-child(2),.lhc_my_bets dt > div:nth-child(2) {
+    flex: 1 1 40%;
+}
+
+.lhc_my_bets dd > div:nth-child(3), .lhc_my_bets dt > div:nth-child(3){
+    flex: 1 1 10%;
+}
+
+.inside_header {
+    height: 23vw;
+    position: relative;
+    margin-bottom: 10vw;
+}
+
+.introduction {
+    font-weight: 700;
+}
+
+button.type {
+    top: 50vw;
+    position: absolute;
+    right: 5px;
+    margin: 0;
+}
+
+.detail div {
+    flex: 1 1 30%;
+}
+
+body {
+    background-color: #000000;
+}
+
+section.left-select {
+    width: 24vw;
+    height: calc(100% - 50vw);
+    z-index: 1;
+    position: fixed;
+    top: 61vw;
+}
+.lhc_tab {
+    margin-top: unset;
+    top: 94vw;
+}
+.window_check, .window_danger, .window_success{
+    display: block;
+}
+.window_con .window_box > div {
+    display: block;
+}
+
+.window_con .window_box > div h4 {
+    content: '';
+    line-height: 10.5vw;
+    display: block;
+    background: url(../sprites/test.sprite.png)no-repeat 0 -1473vw / 84.7vw;
+    color: #e7cd9f;
+}
+
+.window_con .window_box > div p {
+    margin-top: 17px;
+}
+.window_box > div > div {
+    padding-top: 37px;
+    margin-top: -37px;
+}
+
+.window_box > div {
+    position: relative;
+}
+
+.window_box > .window_clear::before, .window_box > .window_danger::before , .window_box > .window_success::before{
+    content: '';
+    background: url(../images/popbg.png);
+    background-size: 100% auto;
+    width: 100%;
+    height: calc(100% - 16.5vw);
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 10.5vw;
+    left: 0;
+}
+
+.window_box .window_rules > div {
+    padding-top: 1vw;
+    margin-top: unset;
+}

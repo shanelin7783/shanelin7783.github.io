@@ -1,0 +1,42 @@
+{
+  "name": "lottery_web",
+  "version": "0.1.2",
+  "private": true,
+  "scripts": {
+    "dev": "babel-node server.js",
+    "build": "next build",
+    "start": "babel-node server.js",
+    "release": "standard-version",
+    "export": "next export",
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages",
+  },
+  "dependencies": {
+    "big.js": "^5.2.2",
+    "buffer": "^5.4.2",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "immutable": "^4.0.0-rc.12",
+    "lodash": "^4.17.15",
+    "next": "9.0.5",
+    "next-redux-wrapper": "^3.0.0",
+    "nprogress": "^0.2.0",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-observable": "^1.1.0",
+    "rxjs": "^6.5.2",
+    "standard-version": "^7.0.0",
+    "styled-components": "^4.3.2",
+    "superagent": "^5.1.0",
+    "ua-parser-js": "^0.7.20",
+    "universal-rxjs-ajax": "^2.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/node": "^7.5.0",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-styled-components": "^1.10.6"
+  }
+}

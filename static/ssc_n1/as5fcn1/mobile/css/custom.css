@@ -1,0 +1,265 @@
+html,body, #__next {
+    height: 100%;
+}
+
+#loadOverlay {
+    display: none !important;
+}
+
+.window_con .window_box > div {
+    display: block;
+}
+
+.bot_menu_popup {
+    display: none;
+}
+
+.bot_menu_popup.active {
+    display: block;
+}
+
+header nav .ffc_smenucon {
+    z-index: 69696;
+}
+
+.inside_header {
+    z-index: 9999;
+}
+
+.chart .chart_list.expect dt {
+    font-size: calc(100vw * 0.023);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.chart .chart_list.expect .line {
+    border-color: #ffd430;
+}
+
+.chart .chart_list dd {
+    position: relative;
+}
+
+.chart_list {
+    position: relative;
+}
+
+.chart .chart_list dd span.brown {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    line-height: 5vw;
+    z-index: 2;
+}
+
+.animation_frame {
+    transform: scale(0.53);
+    position: fixed;
+    top: 17.5vw;
+    left: 20vw;
+    z-index: 2;
+}
+
+.animation_loading {
+    text-align: center;
+    z-index: 99999;
+    position: relative;
+    transform: translateX(11vw) translateY(-15.7vw);
+}
+@keyframes expandWidth {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+.meter {
+    width: 100px;
+    border-radius: 25px;
+    padding: 2px;
+    height: 8px;
+    display: inline-block;
+    background: rgba(113, 113, 113, 0.23);
+}
+.meter span {
+    display: block;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #cf3c5c;
+    position: relative;
+    overflow: hidden;
+    animation-name: expandWidth;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+}
+/*
+Header .ffc_number {
+    z-index: 10000;
+    position: relative;
+}
+
+.sum_box {
+    z-index: 10000;
+    position: relative;
+}
+
+Header .ffc_number .ffc_numbercon ol li:not(:last-child) {
+    background: url(../images/header_num_bg.png);
+    background-size: 100%;
+}
+
+Header .ffc_number .ffc_numbercon ol li:nth-child(3) {
+    font-size: 6vw;
+    margin: 0 1.5% 0;
+    box-shadow: none;
+    font-weight: normal;
+}
+
+Header .ffc_number .ffc_numbercon ol li:last-child {
+    font-size: 3.8vw;
+    font-weight: normal;
+    margin: 0 -5px 0 -1vw;
+    box-shadow: none;
+}
+
+Header nav .volume img:last-child {
+    display: unset;
+}
+
+Header .ffc_number .ffc_numbertxt::before {
+    content: '';
+    width: 15px;
+    height: 10px;
+    margin-right: 3px;
+    position: relative;
+    z-index: 1;
+    background: url(../images/header_disc.png);
+    background-size: 100%;
+}
+
+Header .ffc_number .ffc_numbercon ul li {
+    background: url(../images/header_num_bg.png);
+    background-size: 100%;
+} */
+
+.window_con .window_box > div p {
+    word-break: break-word;
+}
+
+article .play_number {
+    margin-bottom: unset;
+}
+
+header {
+    position: relative !important;
+}
+
+footer {
+    position: relative !important;
+}
+
+.note {
+    position: relative !important;
+    margin-top: unset;
+}
+
+.lhc_kind .topborder {
+    position: relative;
+}
+
+
+
+.detail_container {
+    background:url(../images/bg.jpg) top center repeat; background-size:97%;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 15vw);
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+
+.detail_container.active {
+    transform: translateX(0);
+}
+
+.detail {
+    width: 85%;
+    flex: 1;
+    overflow: auto;
+    position: relative;
+    padding-top: 5vw;
+}
+
+.detail dl:last-child {
+    margin-bottom: 7vw;
+}
+
+.detail:before {
+    margin-top: unset;
+    background-size: 97% auto;
+}
+
+.detail:after {
+    background-size: 97% auto;
+    position: fixed;
+    bottom: 21vw;
+    bottom: 0;
+}
+
+.detail-content {
+    word-break: break-all;
+}
+
+.now-period {
+    margin-top: unset;
+    position: unset;
+}
+
+
+.detail div {
+    flex: 1 1 30%;
+}
+
+.window_con .window_box > div h4 {
+    background: -webkit-gradient(linear,left top,right top,from(#ffffaf),to(#ffcb35));
+    background: linear-gradient(to top,#ffffaf,#ffcb35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4.5vw;
+}
+
+.window_con .window_box > .window_clear div button {
+    background-image: url(../images/buttonb.png);
+    background-position: top center;
+    background-size: contain;
+    font-size: 0;
+}
+
+.window_con .window_box > .window_clear div button:last-child {
+    background-image: url(../images/buttona.png);
+}
+
+.window_con .window_box > div button {
+    background-image: url(../images/buttona.png);
+    background-size: contain;
+    font-size: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.new_menu_title_text {
+    background: -webkit-gradient(linear,left top,right top,from(#ffffaf),to(#ffcb35));
+    background: linear-gradient(to top,#ffffaf,#ffcb35);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4.5vw;
+}

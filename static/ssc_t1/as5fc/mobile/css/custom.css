@@ -1,0 +1,233 @@
+html,body, #__next {
+    height: 100%;
+}
+
+header {
+    position: relative;
+}
+
+header .winning-info {
+    z-index: 2;
+    position: relative;
+}
+
+header nav .dropmenu {
+    z-index: 3;
+    height: auto;
+    min-height: 60vw;
+}
+
+.lhc_my_bets dd > div:nth-child(2) div:last-child:before {
+    content: '';
+    position: absolute;
+    margin-left: 0vw;
+}
+.lhc_my_bets dd > div:nth-child(2) div:last-child {
+    margin-left: 0vw; 
+}
+
+header nav .smenu.active {
+    display: block;
+}
+
+.window_con {
+    z-index: 99;
+}
+
+.window_con .window_box {
+}
+
+.window_con .window_box > div {
+    display: block;
+}
+
+.new_window {
+    z-index: 1000;
+}
+
+.bot_menu_popup {
+    display: none;
+    position: absolute;
+}
+
+.bot_menu_popup.active {
+    display: block;
+}
+
+.animation_frame {
+    position: absolute;
+    top: 21vw;
+    left: 0;
+    z-index: 0;
+}
+
+.animation_loading {
+    text-align: center;
+    z-index: 99999;
+    position: relative;
+    transform: translateX(0vw) translateY(19vw);
+}
+@keyframes expandWidth {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+.meter {
+    width: 100px;
+    border-radius: 25px;
+    padding: 2px;
+    height: 8px;
+    display: inline-block;
+    background: rgba(113, 113, 113, 0.23);
+}
+.meter span {
+    display: block;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #f0ca42;
+    position: relative;
+    overflow: hidden;
+    animation-name: expandWidth;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+}
+
+.lhc_my_bets div {
+    flex: 1 1 16%;
+}
+
+.lhc_my_bets dt > div:nth-child(2), .lhc_my_bets dd > div:nth-child(2) {
+    flex: 1 1 27%;
+}
+header .winning-countdown ol {
+    min-width: 21vw;
+}
+
+#loadOverlay {
+    display: none !important;
+}
+
+header nav .left-menu, header nav .right-menu {
+    z-index: 5;
+}
+
+.main-container {
+    margin-bottom: unset;
+    margin-top: 5vw;
+    flex: 1;
+    overflow: auto;
+}
+
+footer {
+    position: unset;
+    background-position-y: bottom;
+    padding: 0 4vw 0 4vw;
+}
+
+.inside_header {
+    position: unset;
+    z-index: 3;
+}
+
+.inside_header + main {
+    margin-top: unset;
+    margin-bottom: unset;
+    flex: 1;
+    overflow: auto;
+}
+.window_con .window_box > div button {
+    width: 31vw;
+    background-position: center;
+}
+.window_clear div button, .window_rules div button {
+    flex: 1 1 auto;
+    padding: 0;
+    margin: 0 3px;
+}
+.window_con .window_box > div p {
+    line-height: 8vw;
+}
+    
+.detail_container {
+    background:url(../images/bg.png) top center repeat; background-size:97%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+
+.detail_container.active {
+    transform: translateX(0);
+}
+
+#detail {
+    left: 0;
+}
+
+.window_con .window_box > div p {
+    word-break: break-word;
+}
+
+.chart .chart_list dt {
+    flex: 1 1 17%;
+}
+.lhc_menu {
+   flex-wrap: wrap;
+}
+
+.lhc_menu a {
+    flex: 0;
+    min-width: 30%;
+}
+
+.detail div  {
+    flex: 1 1 30%;
+}
+
+header nav .title {
+    flex: 1 1 10%;
+}
+
+.window_con .window_box > div h4 {
+    background-size: 100% auto;
+    font-weight: unset;
+    letter-spacing: unset;
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+    text-align: center;
+    padding: unset;
+    font-size: 3.8vw;
+    line-height: 11vw;
+    margin-bottom: 5vw;
+    background: url(../images/popbgtop.png) no-repeat top center / 100%;
+    color: #fff;
+}
+
+
+.window_con .window_box > div {
+    position: relative;
+}
+
+.window_con .window_box > div::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: -9.4vw;
+    left: 0;
+    background: url(../images/popbgbot.png) no-repeat bottom center / 100%;
+    padding-bottom: 9.4vw;
+}
+
+.infopop {
+    z-index: 3;
+}
