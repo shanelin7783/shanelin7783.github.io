@@ -1,0 +1,253 @@
+html,body, #__next {
+    height: 100%;
+}
+
+#loadOverlay {
+    display: none !important;
+}
+
+aside nav.active {
+    display: block;
+}
+
+header .smenu nav .smenucon.active {
+    display: block;
+}
+
+header .close nav .menu.active {
+    display: block;
+    height: 60vw;
+    background-size: 100% 100%;
+}
+
+.chart .chart_tit, .chart .chart_list {
+    padding: 0 1vw 0 1vw;
+}
+
+.chart .chart_list.expect dt {
+    font-size: calc(100vw * 0.023);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.chart .chart_list dd {
+    position: relative;
+}
+
+.chart_list {
+    position: relative;
+}
+
+.chart .chart_list dd span.red {
+    position: absolute;
+    height: 5vw;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    line-height: 5vw;
+    z-index: 2;
+}
+
+
+aside ul li:last-child {
+    z-index: unset;
+}
+
+.gameContainer {
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    height: 40vh;
+}
+
+.main-wrap {
+}
+
+.mainTest{
+    background:url("../images/bg.png") top center no-repeat , linear-gradient(to bottom, #8f09bb 90%, #8f09bc 100%);
+    background-size:100%;
+    font-family:Microsoft JhengHei;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+.mainContainer {
+    height: calc(100% - 32vw);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    min-height: 100vh;
+}
+
+/* body {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+html {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+} */
+
+article .play_number {
+    margin-bottom: unset;
+}
+
+aside {
+    position: unset;
+
+}
+
+aside ul li:last-child {
+    position: unset;
+}
+
+.chart, .history, .bets, .rules {
+    flex: 1;
+    overflow: auto;
+}
+
+aside nav h4 {
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    padding: 0 0 5vw;
+}
+
+.button-container {
+    display: flex;
+}
+
+.btn_confirm {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.window .window_con .window_box p {
+    text-align: center;
+}
+
+.detail_container {
+    background: url(../images/bg.png) top center repeat;
+    background-size: 97%;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 27vw);
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+    border-top: 1px solid transparent;
+}
+
+.detail_container.active {
+    transform: translateX(0);
+}
+
+.bets ol {
+    background: #000;
+    overflow: auto;
+    top: 0vw;
+    position: relative;
+    height: 100%;
+}
+
+.bets ol li dl dd span {
+    background: none;
+}
+.bets ol li dl dd span.red {
+    background: #ed1e79;
+}
+.bets ol li dl dd span.blue {
+    background: #00ceff;
+}
+.bets ol li dl dd span.green {
+    background: #56ce2c;
+}
+
+.window_clear {
+    width: 100%;
+}
+
+.button-container {
+    justify-content: space-between;
+}
+
+.window .window_con .window_box .btn_confirm {
+    background-position: center;
+    width: 32vw;
+    line-height: unset;
+    padding: 3.6vw;
+    margin: 0 auto;
+}
+
+.window_success {
+    width: 100%;
+}
+
+.window_success dt {
+    background: #ff00ff;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.window_success dt div{
+    padding: 3vw;
+    flex: 1 1 50%;
+}
+
+.window_success dd {
+    font-size: 4vw;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ff00ff;
+    margin-bottom: 5vw;
+}
+
+.window_success dd div {
+    padding: 3vw;
+    flex: 1 1 50%;
+    border-left: 1px solid #ff00ff;
+    border-right: 1px solid #ff00ff;
+ }
+
+ .window_con .window_box > div p {
+    word-break: break-word;
+}
+
+aside .number_confirm {
+    width: 94%;
+}
+
+.chart .chart_tit dt, .chart .chart_list dt {
+    flex: 1 1 16%;
+}
+.bet-notes {
+    margin-left: 10px;
+    line-height: 50px;
+}
+
+.btn_mul{
+    min-height: 10vw !important;
+}
+
+.btn_mul button {
+    min-height: 100% !important;
+}
