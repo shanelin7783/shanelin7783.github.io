@@ -51,6 +51,7 @@ module.exports = {
         });
         return config;
     },
+    assetPrefix: '/shanelin7783.github.io/',
     exportPathMap: async function(defaultPathMap) {
         return {
             "/": { page: "/" },
